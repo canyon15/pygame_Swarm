@@ -1,3 +1,8 @@
+"""
+Enemy Class
+Author: Bryson Rogers
+Functions: initialize, move , draw, kill
+"""
 import pygame
 import point
 import cmath
@@ -12,11 +17,11 @@ class Enemy():
         self.y = y
         self.health = 10
 
-        
+    # draw function
     def draw(self, surface):
         #print ("x ori = ", self.oriX, "y ori = ", self.oriY)
         pygame.draw.circle(surface, (255, 0, 0), (self.x,self.y), self.radius)
-        
+    # change location
     def move(self, playerX, playerY):
         if (abs(self.x - playerX) >=  abs(self.y - playerY)):
             if self.x > playerX:
@@ -29,7 +34,7 @@ class Enemy():
             elif self.y < playerY:
                 self.y += 1
             
-
+    # delete self
     def kill(self):
         del self
     
