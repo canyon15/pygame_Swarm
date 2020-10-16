@@ -9,3 +9,7 @@ Controls through 'W', 'A', 'S', 'D' keys to move, and right and left arrow keys 
 up arrow key to shoot.
 
 ![image](https://user-images.githubusercontent.com/71223581/96293652-5599d780-0fa8-11eb-8c41-b220a3c71e90.png)
+
+*helpful websites*
+https://www.pygame.org/news
+https://www.pygame.org/docs/
